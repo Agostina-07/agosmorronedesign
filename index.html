@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1f1f1f">
+  <title>Agostina Morrone | Diseño Gráfico</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="header" id="siteHeader">
+    <a href="#inicio" class="logo" aria-label="Agostina Morrone, inicio">
+      <img src="./img/home/Logo.svg" alt="Logo de Agostina Morrone">
+    </a>
+
+    <button class="hamburger" id="btnMenu" type="button"
+      aria-expanded="false" aria-controls="mainNav"
+      aria-label="Abrir menú">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Principal">
+      <a href="proyectos.html">Proyectos</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="scrim" id="scrim" hidden></div>
+
+  <main>
+    <!-- PRESENTACIÓN -->
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <p class="eyebrow">PILOTO / DISEÑADORA GRÁFICA</p>
+        <h1>Agostina<br>Morrone</h1>
+        <p class="hero-subtitulo">
+          Precisa en el proceso.<br>
+          <span>Espontánea en el resultado.</span>
+        </p>
+        <a href="#circuito" class="hero-link">RECORRÉ MI CIRCUITO ↓</a>
+      </div>
+
+      <div class="hero-imagen">
+        <img src="./img/home/Mesa de trabajo 2.png" alt="Agostina Morrone">
+        <span class="foto-codigo">AM-007 / DRIVER PROFILE</span>
+      </div>
+    </section>
+
+    <!-- CIRCUITO INTERACTIVO -->
+    <section class="circuito" id="circuito">
+
+      <div class="seccion-intro">
+        <span class="circuito-numero-fondo" aria-hidden="true">01—05</span>
+        <h2>Un recorrido<br>por quién soy.</h2>
+        <p>Elegí una curva para conocerme.</p>
+      </div>
+
+      <div class="pista">
+
+       <!-- TRAZADO -->
+<svg class="pista-svg"
+  viewBox="0 0 1000 1200"
+  preserveAspectRatio="none"
+  aria-hidden="true">
+
+  <path class="pista-borde"
+    d="M 80,-30
+       L 80,120
+       C 80,190 170,210 270,210
+       L 750,210
+       C 900,210 920,330 820,390
+       L 260,390
+       C 100,390 100,510 250,530
+       L 720,560
+       C 920,575 910,720 760,740
+       L 280,740
+       C 100,740 100,870 280,890
+       L 950,890
+       C 1080,900 1080,1030 950,1100" />
+
+  <path class="pista-linea"
+    d="M 80,-30
+       L 80,120
+       C 80,190 170,210 270,210
+       L 750,210
+       C 900,210 920,330 820,390
+       L 260,390
+       C 100,390 100,510 250,530
+       L 720,560
+       C 920,575 910,720 760,740
+       L 280,740
+       C 100,740 100,870 280,890
+       L 950,890
+       C 1080,900 1080,1030 950,1100" />
+
+</svg>
+        <!-- BOTONES DE LAS CURVAS -->
+        <button class="curva" data-curva="0"
+          style="--x:8%; --y:10%;"
+          aria-label="Curva 1: presentación" aria-pressed="false">
+          01
+        </button>
+
+        <button class="curva" data-curva="1"
+          style="--x:75%; --y:17.5%;"
+          aria-label="Curva 2: formación" aria-pressed="false">
+          02
+        </button>
+
+        <button class="curva" data-curva="2"
+          style="--x:82%; --y:32.5%;"
+          aria-label="Curva 3: herramientas" aria-pressed="false">
+          03
+        </button>
+
+        <button class="curva" data-curva="3"
+          style="--x:25%; --y:46.7%;"
+          aria-label="Curva 4: experiencia" aria-pressed="false">
+          04
+        </button>
+
+        <button class="curva" data-curva="4"
+          style="--x:76%; --y:61.7%;"
+          aria-label="Curva 5: método de trabajo" aria-pressed="false">
+          05
+        </button>
+
+        <!-- TARJETA DE INFORMACIÓN -->
+        <article class="info-curva" id="info-curva" aria-live="polite">
+
+          <div class="info-cabecera">
+            <span id="info-numero">CURVA 01</span>
+            <span class="estado">● EN PISTA</span>
+          </div>
+
+          <p class="info-etiqueta" id="info-etiqueta">
+            PRESENTACIÓN DEL PILOTO
+          </p>
+
+          <h3 id="info-titulo">¿Quién soy?</h3>
+
+          <p id="info-texto">
+            Soy Agostina, estudiante de Diseño Gráfico en UADE.
+          </p>
+
+          <div class="info-pie">
+            <span id="info-codigo">AM / PROFILE</span>
+            <span>PORTFOLIO / 2026</span>
+          </div>
+
+        </article>
+
+      </div>
+
+      <p class="pista-ayuda">01—05 / SELECCIONÁ UNA CURVA PARA CONTINUAR</p>
+
+    </section>
+
+    <!-- ACCESO A PROYECTOS -->
+    <section class="home-proyectos">
+      <div class="home-proyectos-contenido">
+        <span class="eyebrow">PRÓXIMA VUELTA / MIS TRABAJOS</span>
+        <h2>Cada proyecto,<br>un nuevo recorrido.</h2>
+        <p>
+          Explorá una selección de trabajos donde las ideas
+          toman forma a través del diseño, la identidad
+          y la comunicación visual.
+        </p>
+        <a href="proyectos.html" class="home-proyectos-link">
+          Explorar proyectos <span>↗</span>
+        </a>
+      </div>
+
+      <div class="home-proyectos-numero">
+        <span>AM</span>
+        <strong>777</strong>
+        <span>PORTFOLIO / 2026</span>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <footer class="footer" id="contacto">
+      <div>
+        <p class="eyebrow">FIN DE VUELTA / PRÓXIMA SALIDA</p>
+        <h2>¿Creamos algo?</h2>
+        <p>Estoy lista para el próximo proyecto.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:agosmorrone@gmail.com">Email ↗</a>
+        <a href="https://www.instagram.com/agoosmorrone07/"
+          target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a href="https://www.linkedin.com/in/agostina-morrone-87628827a/"
+          target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+
+      <p class="copyright">
+        © 2026 Agostina Morrone / Diseño Gráfico
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
